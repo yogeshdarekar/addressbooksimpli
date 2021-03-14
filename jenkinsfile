@@ -37,7 +37,7 @@ peline {
                          }
                 }
             }  
-            stage('Deploy image') {
+            stage('push image') {
                 steps {
                     script {
                       docker.withRegistry( '', registryCredential) {
